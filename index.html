@@ -1,88 +1,90 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite Gym | نبض الحديد</title>
-    <style>
-        /* التمرير الانسيابي */
-        html { scroll-behavior: smooth; }
-        
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #ffffff; margin: 0; line-height: 1.6; }
-        
-        header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; padding: 100px 20px; text-align: center; border-bottom: 4px solid #e63946; }
-        h1 { margin: 0; font-size: 3em; color: #e63946; }
-        
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Gym | نبض الحديد</title>
+    <style>
+        /* التمرير الانسيابي */
+        html { scroll-behavior: smooth; }
+        
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #ffffff; margin: 0; line-height: 1.6; }
+        
+        header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; padding: 100px 20px; text-align: center; border-bottom: 4px solid #e63946; }
+        h1 { margin: 0; font-size: 3em; color: #e63946; }
+        
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
 
-        /* تنسيق قائمة المحتوى */
-        .nav-section { background: #1e1e1e; padding: 25px; border-radius: 10px; margin-bottom: 40px; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        .nav-section h3 { color: #e63946; margin-top: 0; margin-bottom: 20px; border-right: 4px solid #e63946; padding-right: 10px; }
-        .nav-links { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-        .nav-links li a { color: #ffffff; text-decoration: none; font-size: 1.1em; transition: 0.3s; display: block; padding: 5px 0; }
-        .nav-links li a:hover { color: #e63946; padding-right: 10px; }
-        /* تنسيق الأقسام الفارغة */
-        section { background: #1e1e1e; margin-bottom: 50px; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); border-top: 3px solid #e63946; min-height: 200px; }
-        h2 { color: #e63946; border-bottom: 1px solid #333; padding-bottom: 15px; margin-top: 0; }
-        .placeholder-text { color: #555; font-style: italic; }
+        /* تنسيق قائمة المحتوى */
+        .nav-section { background: #1e1e1e; padding: 25px; border-radius: 10px; margin-bottom: 40px; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .nav-section h3 { color: #e63946; margin-top: 0; margin-bottom: 20px; border-right: 4px solid #e63946; padding-right: 10px; }
+        .nav-links { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+        .nav-links li a { color: #ffffff; text-decoration: none; font-size: 1.1em; transition: 0.3s; display: block; padding: 5px 0; }
+        .nav-links li a:hover { color: #e63946; padding-right: 10px; }
 
-        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9em; border-top: 1px solid #333; }
-    </style>
+        /* تنسيق الأقسام الفارغة */
+        section { background: #1e1e1e; margin-bottom: 50px; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); border-top: 3px solid #e63946; min-height: 200px; }
+        h2 { color: #e63946; border-bottom: 1px solid #333; padding-bottom: 15px; margin-top: 0; }
+        .placeholder-text { color: #555; font-style: italic; }
+
+        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9em; border-top: 1px solid #333; }
+    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to Our Cloud Project - Elite Gym 🏋️‍♂️</h1>
-        <p>مشروع المجموعة (2) | القوة تبدأ من هنا</p>
-    </header>
+    <header>
+        <h1>Welcome to Our Cloud Project - Elite Gym 🏋️‍♂️</h1>
+        <p>مشروع المجموعة (2) | القوة تبدأ من هنا</p>
+    </header>
 
-    <div class="container">
-        
-        <div class="nav-section">
-            <h3>محتوى الموقع:</h3>
-            <ul class="nav-links">
-                <li><a href="#about">1- تعريف عن الفريق وأهداف المشروع</a></li>
-                <li><a href="#training">2- قسم التدريب</a></li>
-                <li><a href="#nutrition">3- قسم التغذية</a></li>
-                <li><a href="#motivation">4- قسم التحفيز</a></li>
-                <li><a href="#students">5- أسماء الطلاب المشاركين</a></li>
-            </ul>
-        </div>
+    <div class="container">
+        
+        <div class="nav-section">
+            <h3>محتوى الموقع:</h3>
+            <ul class="nav-links">
+                <li><a href="#about">1- تعريف عن الفريق وأهداف المشروع</a></li>
+                <li><a href="#training">2- قسم التدريب</a></li>
+                <li><a href="#nutrition">3- قسم التغذية</a></li>
+                <li><a href="#motivation">4- قسم التحفيز</a></li>
+                <li><a href="#students">5- أسماء الطلاب المشاركين</a></li>
+            </ul>
+        </div>
 
-        <section id="about">
-            <h2>1- تعريف عن الفريق وأهداف المشروع</h2>
-            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
-        </section>
+        <section id="about">
+            <h2>1- تعريف عن الفريق وأهداف المشروع</h2>
+            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+        </section>
 
-        <section>
-            <h2>لماذا تختار Elite Gym؟</h2>
-            <p>"الألم مؤقت، لكن المجد أبدي. نحن نوفر لك البيئة المثالية لتفجير طاقاتك والوصول إلى أفضل نسخة من نفسك."</p>
-        </section>
+        <section>
+            <h2>لماذا تختار Elite Gym؟</h2>
+            <p>"الألم مؤقت، لكن المجد أبدي. نحن نوفر لك البيئة المثالية لتفجير طاقاتك والوصول إلى أفضل نسخة من نفسك."</p>
+        </section>
 
-        <section id="training">
-            <h2>2- قسم التدريب</h2>
-            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
-        </section>
+        <section id="training">
+            <h2>2- قسم التدريب</h2>
+            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+        </section>
 
-        <section id="nutrition">
-            <h2>3- قسم التغذية</h2>
-            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
-        </section>
+        <section id="nutrition">
+            <h2>3- قسم التغذية</h2>
+            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+        </section>
 
-        <section id="motivation">
-            <h2>4- قسم التحفيز</h2>
-            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
-        </section>
+        <section id="motivation">
+            <h2>4- قسم التحفيز</h2>
+            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+        </section>
 
-        <section id="students">
-            <h2>5- أسماء الطلاب المشاركين في المشروع</h2>
-            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
-        </section>
+        <section id="students">
+            <h2>5- أسماء الطلاب المشاركين في المشروع</h2>
+            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+        </section>
 
-    </div>
+    </div>
 
-    <footer>
-        <p>جميع الحقوق محفوظة للمجموعة (2) - جامعة جازان</p>
-    </footer>
+    <footer>
+        <p>جميع الحقوق محفوظة للمجموعة (2) - جامعة جازان</p>
+    </footer>
+
 </body>
 </html>
