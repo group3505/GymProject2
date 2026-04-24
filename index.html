@@ -1,113 +1,90 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite Gym | نبض الحديد</title>
-    <style>
-        /* التمرير الانسيابي */
-        html { scroll-behavior: smooth; }
-        
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #ffffff; margin: 0; line-height: 1.6; }
-        
-        header { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; padding: 120px 20px; text-align: center; border-bottom: 4px solid #e63946; }
-        h1 { margin: 0; font-size: 3.5em; color: #e63946; text-transform: uppercase; letter-spacing: 2px; }
-        header p { font-size: 1.2em; color: #ccc; margin-top: 10px; }
-        
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Gym | نبض الحديد</title>
+    <style>
+        /* التمرير الانسيابي */
+        html { scroll-behavior: smooth; }
+        
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #ffffff; margin: 0; line-height: 1.6; }
+        
+        header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; padding: 100px 20px; text-align: center; border-bottom: 4px solid #e63946; }
+        h1 { margin: 0; font-size: 3em; color: #e63946; }
+        
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
 
-        /* تنسيق قائمة المحتوى */
-        .nav-section { background: #1e1e1e; padding: 25px; border-radius: 10px; margin-bottom: 40px; border: 1px solid #333; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-        .nav-section h3 { color: #e63946; margin-top: 0; margin-bottom: 20px; border-right: 4px solid #e63946; padding-right: 15px; }
-        .nav-links { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
-        .nav-links li a { color: #ffffff; text-decoration: none; font-size: 1.1em; transition: 0.3s; display: block; padding: 5px 0; }
-        .nav-links li a:hover { color: #e63946; padding-right: 15px; }
+        /* تنسيق قائمة المحتوى */
+        .nav-section { background: #1e1e1e; padding: 25px; border-radius: 10px; margin-bottom: 40px; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .nav-section h3 { color: #e63946; margin-top: 0; margin-bottom: 20px; border-right: 4px solid #e63946; padding-right: 10px; }
+        .nav-links { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+        .nav-links li a { color: #ffffff; text-decoration: none; font-size: 1.1em; transition: 0.3s; display: block; padding: 5px 0; }
+        .nav-links li a:hover { color: #e63946; padding-right: 10px; }
 
-        /* تنسيق الأقسام */
-        section { background: #1e1e1e; margin-bottom: 50px; padding: 40px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); border-top: 4px solid #e63946; }
-        h2 { color: #e63946; border-bottom: 1px solid #333; padding-bottom: 15px; margin-top: 0; display: flex; align-items: center; gap: 10px; }
-        
-        .motivation-content blockquote { font-size: 1.4em; border-right: 5px solid #e63946; padding: 10px 20px; margin: 20px 0; background: #252525; font-style: italic; }
-        .motivation-image { width: 100%; border-radius: 10px; margin: 20px 0; border: 1px solid #444; }
-        
-        .features-list { list-style: none; padding: 0; }
-        .features-list li { margin-bottom: 15px; padding-right: 30px; position: relative; }
-        .features-list li::before { content: '✔️'; position: absolute; right: 0; color: #e63946; }
+        /* تنسيق الأقسام الفارغة */
+        section { background: #1e1e1e; margin-bottom: 50px; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); border-top: 3px solid #e63946; min-height: 200px; }
+        h2 { color: #e63946; border-bottom: 1px solid #333; padding-bottom: 15px; margin-top: 0; }
+        .placeholder-text { color: #555; font-style: italic; }
 
-        .placeholder-text { color: #666; font-style: italic; text-align: center; padding: 20px; border: 1px dashed #444; border-radius: 5px; }
-
-        footer { text-align: center; padding: 50px; color: #888; font-size: 0.9em; border-top: 1px solid #333; background: #0a0a0a; }
-    </style>
+        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9em; border-top: 1px solid #333; }
+    </style>
 </head>
 <body>
 
-    <header>
-        <h1>ELITE GYM 🏋️‍♂️</h1>
-        <p>مشروع الحوسبة السحابية - المجموعة (2)</p>
-    </header>
+    <header>
+        <h1>Welcome to Our Cloud Project - Elite Gym 🏋️‍♂️</h1>
+        <p>مشروع المجموعة (2) | القوة تبدأ من هنا</p>
+    </header>
 
-    <div class="container">
-        
-        <div class="nav-section">
-            <h3>بوصلة الموقع:</h3>
-            <ul class="nav-links">
-                <li><a href="#about">1- تعريف عن الفريق وأهداف المشروع</a></li>
-                <li><a href="#training">2- قسم التدريب</a></li>
-                <li><a href="#nutrition">3- قسم التغذية</a></li>
-                <li><a href="#motivation">4- قسم التحفيز (نبض الحديد)</a></li>
-                <li><a href="#students">5- أسماء الطلاب المشاركين</a></li>
-            </ul>
-        </div>
+    <div class="container">
+        
+        <div class="nav-section">
+            <h3>محتوى الموقع:</h3>
+            <ul class="nav-links">
+                <li><a href="#about">1- تعريف عن الفريق وأهداف المشروع</a></li>
+                <li><a href="#training">2- قسم التدريب</a></li>
+                <li><a href="#nutrition">3- قسم التغذية</a></li>
+                <li><a href="#motivation">4- قسم التحفيز</a></li>
+                <li><a href="#students">5- أسماء الطلاب المشاركين</a></li>
+            </ul>
+        </div>
 
-        <section id="about">
-            <h2>1- تعريف عن الفريق وأهداف المشروع</h2>
-            <p>نحن فريق من طلاب جامعة جازان يجمعنا الطموح والشغف بالتقنية والرياضة. يهدف مشروعنا إلى تسليط الضوء على أهمية اللياقة البدنية من خلال دمج مهارات الاستضافة السحابية وتطوير الويب لإنشاء منصة "Elite Gym".</p>
-            <p>رؤيتنا هي تبسيط الوصول للمعلومات الرياضية والصحية والمساهمة في بناء مجتمع أكثر حيوية وقوة.</p>
-        </section>
+        <section id="about">
+            <h2>1- تعريف عن الفريق وأهداف المشروع</h2>
+            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+        </section>
 
-        <section id="motivation">
-            <h2>4- قسم التحفيز: حيث تُصنع النسخة الأفضل منك</h2>
-            <div class="motivation-content">
-                <p>الجيم ليس مجرد جدران تضم معدات حديدية، بل هو <strong>المصنع الذي تُعاد فيه صياغة شخصيتك</strong> قبل جسدك. عندما تقرر الذهاب للتمرين، أنت لا ترفع الأثقال فحسب، بل ترفع سقف طموحاتك وتكسر قيود الكسل.</p>
-                
-                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="تحفيز" class="motivation-image">
+        <section>
+            <h2>لماذا تختار Elite Gym؟</h2>
+            <p>"الألم مؤقت، لكن المجد أبدي. نحن نوفر لك البيئة المثالية لتفجير طاقاتك والوصول إلى أفضل نسخة من نفسك."</p>
+        </section>
 
-                <h3>لماذا تبدأ الآن؟</h3>
-                <ul class="features-list">
-                    <li><strong>الانضباط فوق الدافع:</strong> الشغف قد يجعلك تبدأ، لكن الالتزام هو ما يجعلك تستمر حين يختفي الحماس.</li>
-                    <li><strong>الاستثمار الأضمن:</strong> كل قطرة عرق تسقط منك هي استثمار في صحتك النفسية والجسدية.</li>
-                    <li><strong>تجاوز الحدود:</strong> في كل مرة تزيد فيها الوزن، أنت تخبر عقلك بأنك أقوى مما كنت تعتقد.</li>
-                </ul>
+        <section id="training">
+            <h2>2- قسم التدريب</h2>
+            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+        </section>
 
-                <blockquote>"التعب الذي تشعر به اليوم، سيكون القوة التي تشعر بها غداً."</blockquote>
+        <section id="nutrition">
+            <h2>3- قسم التغذية</h2>
+            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+        </section>
 
-                <h3>رحلة الألف ميل تبدأ بـ "عدة" واحدة</h3>
-                <p>التغيير يحدث في الخفاء، تحت الجلد، وفي كيمياء الدماغ، قبل أن يظهر للعيان. كن صبوراً مع نفسك، فالبذور التي تزرعها اليوم في صالة الحديد ستزهر ثقة لا تتزحزح.</p>
-                
-                <p><strong>تذكر دائماً:</strong> الفرق بين من أنت ومن تريد أن تكون، هو ما تفعله الآن. هل أنت مستعد لتكون فخوراً بنفسك؟</p>
-            </div>
-        </section>
+        <section id="motivation">
+            <h2>4- قسم التحفيز</h2>
+            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+        </section>
 
-        <section id="training">
-            <h2>2- قسم التدريب</h2>
-            <p class="placeholder-text">[قريباً: جداول تمارين احترافية وشروحات بالفيديو]</p>
-        </section>
+        <section id="students">
+            <h2>5- أسماء الطلاب المشاركين في المشروع</h2>
+            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+        </section>
 
-        <section id="nutrition">
-            <h2>3- قسم التغذية</h2>
-            <p class="placeholder-text">[قريباً: خطط غذائية محسوبة السعرات ونصائح للمكملات]</p>
-        </section>
+    </div>
 
-        <section id="students">
-            <h2>5- أسماء الطلاب المشاركين في المشروع</h2>
-            <p class="placeholder-text">[بانتظار قائمة الأسماء المعتمدة للمجموعة الثانية]</p>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>جميع الحقوق محفوظة للمجموعة (2) - جامعة جازان © 2026</p>
-    </footer>
+    <footer>
+        <p>جميع الحقوق محفوظة للمجموعة (2) - جامعة جازان</p>
+    </footer>
 
 </body>
 </html>
