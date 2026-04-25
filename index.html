@@ -25,12 +25,16 @@
       /* تنسيق الأقسام */
         section { background: #1e1e1e; margin-bottom: 50px; padding: 40px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); border-top: 4px solid #e63946; }
         h2 { color: #e63946; border-bottom: 1px solid #333; padding-bottom: 15px; margin-top: 0; display: flex; align-items: center; gap: 10px; }
-     
+      
      /* تنسيق الأقسام الفارغة */
         section { background: #1e1e1e; margin-bottom: 50px; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); border-top: 3px solid #e63946; min-height: 200px; }
         h2 { color: #e63946; border-bottom: 1px solid #333; padding-bottom: 15px; margin-top: 0; }
         .placeholder-text { color: #555; font-style: italic; }
 
+        /* تنسيق إضافي لقسم التحفيز */
+        .motivation-content { line-height: 1.8; }
+        .motivation-image { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin: 20px 0; border: 2px solid #333; }
+        .highlight-box { background: rgba(230, 57, 70, 0.1); border-right: 5px solid #e63946; padding: 15px; margin: 20px 0; font-style: italic; }
 
       /* تنسيق قسم الطلاب */
         .student-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
@@ -66,7 +70,8 @@
 
         <section id="about">
             <h2>1- تعريف عن الفريق وأهداف المشروع</h2>
-            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+            <p>نحن فريق من طلاب جامعة جازان يجمعنا الطموح والشغف بالتقنية والرياضة. يهدف مشروعنا إلى تسليط الضوء على أهمية اللياقة البدنية من خلال دمج مهارات الاستضافة السحابية وتطوير الويب لإنشاء منصة "Elite Gym".</p>
+            <p>رؤيتنا هي تبسيط الوصول للمعلومات الرياضية والصحية والمساهمة في بناء مجتمع أكثر حيوية وقوة.</p>
         </section>
 
         <section>
@@ -86,7 +91,40 @@
 
         <section id="motivation">
             <h2>4- قسم التحفيز</h2>
-            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقاً...]</p>
+            <div class="motivation-content">
+                <h3>🏋️‍♂️ الجيم: حيث تُصنع النسخة الأفضل منك</h3>
+                <p>الجيم ليس مجرد جدران تضم معدات حديدية، بل هو المصنع الذي تُعاد فيه صياغة شخصيتك قبل جسدك. عندما تقرر الذهاب للتمرين، أنت لا ترفع الأثقال فحسب، بل ترفع سقف طموحاتك وتكسر قيود الكسل.</p>
+                
+                <img src="https://modo3.com/thumbs/fit630x300/9454/1437036555/%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA_%D8%B9%D9%86_%D9%83%D9%85%D8%A7%D9%84_%D8%A7%D9%84%D8%A7%D8%AC%D8%B3%D8%A7%D9%85.jpg" alt="تحفيز الجيم" class="motivation-image">
+
+                <h3>✨ المعركة الحقيقية</h3>
+                <p>تذكر دائماً أن أصعب ساعة في النادي هي تلك التي تسبق وصولك إليه؛ فالمعركة الحقيقية هي معركة الإرادة ضد أعذار العقل الباطن.</p>
+
+                <h3>🚀 لماذا تبدأ الآن؟</h3>
+                <ul>
+                    <li><strong>🛡️ الانضباط فوق الدافع:</strong> الشغف قد يجعلك تبدأ، لكن الالتزام هو ما يجعلك تستمر حين يختفي الحماس.</li>
+                    <li><strong>💎 الاستثمار الأضمن:</strong> كل قطرة عرق تسقط منك هي استثمار في صحتك النفسية والجسدية لسنوات قادمة.</li>
+                    <li><strong>🔥 تجاوز الحدود:</strong> في كل مرة تزيد فيها الوزن، أنت تخبر عقلك بأنك أقوى مما كنت تعتقد.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    "التعب الذي تشعر به اليوم، سيكون القوة التي تشعر بها غداً."
+                </div>
+
+                <h3>🛣️ رحلة الألف ميل تبدأ بـ "عدة" واحدة</h3>
+                <p>لا تنظر إلى المرآة وتنتظر معجزة في ليلة وضحاها، فالأجسام المثالية لا تُبنى بالأماني، بل بالاستمرارية. التغيير يحدث في الخفاء، تحت الجلد، وفي كيمياء الدماغ، قبل أن يظهر للعيان.</p>
+
+                <h3>💡 نصيحة النخبة:</h3>
+                <ul>
+                    <li>كن صبوراً مع نفسك.</li>
+                    <li>اجعل الجيم ملاذك الآمن لتفريغ ضغوط الحياة.</li>
+                    <li>حوّل إحباطك إلى طاقة حركية تفجر بها طاقاتك الكامنة.</li>
+                </ul>
+
+                <h3>🎯 رسالتك لليوم</h3>
+                <p>أنت لا تتمرن لأنك تكره جسدك، بل لأنك تحبه وتعرف أنه يستحق الأفضل. الفرق بين من أنت ومن تريد أن تكون، هو ما تفعله الآن. هل أنت مستعد لتكون فخوراً بنفسك بعد ثلاثة أشهر؟</p>
+                <p><strong>الحديد لا يعرف المجاملة.. وهو ينتظرك لتكتب قصة نجاحك الجديدة.</strong></p>
+            </div>
         </section>
 
        <section id="students">
