@@ -49,10 +49,13 @@
         .student-card i { display: block; font-size: 2em; margin-bottom: 10px; color: #e63946; }
         .student-card p { margin: 0; font-weight: bold; font-size: 1.1em; }
 
-        /* تنسيق خاص بصور التمارين داخل قسم التدريب */
-        .exercise-item { background: #2a2a2a; padding: 20px; border-radius: 8px; margin-bottom: 25px; border-right: 4px solid #e63946; }
-        .exercise-item h4 { color: #e63946; margin-top: 0; font-size: 1.3em; }
-        .exercise-gif { width: 100%; max-width: 450px; border-radius: 8px; margin: 15px 0; border: 1px solid #444; }
+        /* تنسيق خاص بقسم التدريب المحدث */
+        .exercise-item { background: #252525; padding: 25px; border-radius: 12px; margin-bottom: 30px; border-right: 5px solid #e63946; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .exercise-item h4 { color: #e63946; margin-top: 0; font-size: 1.4em; display: flex; align-items: center; gap: 10px; }
+        .exercise-image { width: 100%; max-width: 500px; border-radius: 10px; margin: 20px 0; border: 2px solid #333; transition: 0.3s; }
+        .exercise-image:hover { border-color: #e63946; }
+        .edu-info { background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 8px; border-left: 3px solid #e63946; margin-top: 15px; font-size: 0.95em; }
+        .edu-info strong { color: #e63946; }
 
         footer { text-align: center; padding: 50px; color: #888; font-size: 0.9em; border-top: 1px solid #333; background: #0a0a0a; }
     </style>
@@ -89,47 +92,66 @@
         </section>
 
         <section id="training">
-            <h2>2- قسم التدريب: ركائز القوة</h2>
-            <p>للحصول على جسم متكامل، يجب التركيز على العضلات الكبيرة (الصدر، الظهر، الأرجل). هذه التمارين لا تحسن المظهر فقط، بل تزيد من إفراز الهرمونات البنائية وترفع معدل الحرق اليومي.</p>
+            <h2>2- قسم التدريب: هندسة الأجسام القوية</h2>
+            <p>السر في بناء جسم رياضي يكمن في استهداف <strong>المجموعات العضلية الكبرى</strong>. تدريب الصدر، الظهر، والأرجل لا يحسن مظهرك فحسب، بل يرفع من مستوى استهلاك الأكسجين (VO2 Max) ويعزز كثافة العظام والتمثيل الغذائي.</p>
             
             <div class="highlight-box">
-                تذكر: الأداء الصحيح والتنفس المنتظم هما مفتاح النجاح وتجنب الإصابات.
+                الثقافة الرياضية: العضلة تنمو بالاستشفاء والتغذية، والتمرين هو "الشرارة" التي تبدأ العملية.
             </div>
 
+            <!-- التمرين 1 -->
             <div class="exercise-item">
                 <h4>1. ضغط الصدر بالدمبل (Dumbbell Chest Press)</h4>
-                <p>يستهدف عضلات الصدر بشكل أساسي والأكتاف والترايسبس بشكل ثانوي. يساعد في زيادة عرض الصدر وقوة الدفع.</p>
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpqcXN6cmx6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKMf5B7S4Yy9wME/giphy.gif" alt="تمرين الصدر" class="exercise-gif">
+                <p>يعتبر حجر الأساس لتطوير الألياف العضلية للصدر (Pectoralis Major). استخدام الدمبل يمنح مدى حركي أوسع مقارنة بالبار، مما يشرك أليافاً عضلية أكثر.</p>
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Dumbbell Bench Press" class="exercise-image">
+                <div class="edu-info">
+                    <strong>الجانب التعليمي:</strong> ركز على عصر عضلات الصدر في أعلى نقطة. <strong>الفائدة:</strong> تقوية عضلات الدفع وتحسين استقامة الكتف ومنع تقوس الجزء العلوي من الظهر.
+                </div>
             </div>
 
+            <!-- التمرين 2 -->
             <div class="exercise-item">
                 <h4>2. السحب العالي للظهر (Lat Pulldown)</h4>
-                <p>تمرين أساسي لعضلات الظهر العريضة. يساعد في بناء قوام متناسق (شكل V) ويقوي عضلات السحب.</p>
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZueG96bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKMGm8O5hW4F6Te/giphy.gif" alt="تمرين الظهر" class="exercise-gif">
+                <p>يستهدف عضلة الظهر العريضة (Latissimus Dorsi). هذا التمرين ضروري جداً لمواجهة آثار الجلوس الطويل أمام الشاشات التي تسبب ضعف عضلات السحب.</p>
+                <img src="https://images.unsplash.com/photo-1594737625785-a2abc99a5d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Lat Pulldown" class="exercise-image">
+                <div class="edu-info">
+                    <strong>الجانب التعليمي:</strong> تخيل أنك تسحب البار بكوعك وليس بيدك. <strong>الفائدة:</strong> يمنح الجسم شكل (V) المتناسق ويخفف الضغط عن فقرات الرقبة والظهر.
+                </div>
             </div>
 
+            <!-- التمرين 3 -->
             <div class="exercise-item">
-                <h4>3. السكوات / القرفصاء (Bodyweight Squat)</h4>
-                <p>ملك تمارين الأرجل. يستهدف الأفخاذ الأمامية والخلفية وعضلات المؤخرة، ويعتبر من أقوى التمارين لحرق السعرات.</p>
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmZueG96bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/26FPsOhRIu6N8iS0o/giphy.gif" alt="تمرين الأرجل" class="exercise-gif">
+                <h4>3. السكوات / القرفصاء (Barbell/Bodyweight Squat)</h4>
+                <p>يوصف بأنه "ملك التمارين". يحرك أكثر من 200 عضلة في الجسم. هو المحفز الأول لإنتاج هرمون النمو الطبيعي في الجسم بسبب حجم الكتلة العضلية المشاركة.</p>
+                <img src="https://images.unsplash.com/photo-1566241440091-ec10de8db2e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Squat Training" class="exercise-image">
+                <div class="edu-info">
+                    <strong>الجانب التعليمي:</strong> حافظ على استقامة العمود الفقري وتوزيع الوزن على منتصف القدم. <strong>الفائدة:</strong> تقوية مفاصل الركبة والحوض وزيادة قوة التحمل البدني العام.
+                </div>
             </div>
 
+            <!-- التمرين 4 -->
             <div class="exercise-item">
-                <h4>4. التجديف بالدمبل (One Arm Dumbbell Row)</h4>
-                <p>يركز على عضلات الظهر الوسطى ويساعد في تحسين وضعية العمود الفقري وزيادة سماكة العضلات.</p>
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZueG96bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/l0HlS5l4T2Yy5m5mU/giphy.gif" alt="تمرين الظهر تجديف" class="exercise-gif">
+                <h4>4. التجديف بالدمبل (Dumbbell One-Arm Row)</h4>
+                <p>تمرين عزل وتجميع لعضلات الظهر الوسطى والكتف الخلفي. يساعد في حل مشاكل "عدم التوازن العضلي" بين جهتي الجسم اليمنى واليسرى.</p>
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Dumbbell Row" class="exercise-image">
+                <div class="edu-info">
+                    <strong>الجانب التعليمي:</strong> حافظ على جذعك ثابتاً وموازياً للأرض وتجنب لف الخصر. <strong>الفائدة:</strong> تحسين قوة القبضة وزيادة كثافة عضلات الظهر العميقة.
+                </div>
             </div>
 
+            <!-- التمرين 5 -->
             <div class="exercise-item">
-                <h4>5. الطعنات الأمامية (Lunges)</h4>
-                <p>تمرين ممتاز للأرجل يركز على التوازن وتقوية عضلات الأفخاذ الأمامية والمؤخرة بشكل منفصل لكل رجل.</p>
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZueG96bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKM6fXW3PZfO7kc/giphy.gif" alt="تمرين الطعنات" class="exercise-gif">
+                <h4>5. الطعنات المتناوبة (Forward Lunges)</h4>
+                <p>تمرين وظيفي (Functional) يحاكي حركة المشي والجري بقوة مضاعفة. يستهدف العضلات الرباعية والسمانة وعضلات التوازن الديناميكي.</p>
+                <img src="https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Lunges Exercise" class="exercise-image">
+                <div class="edu-info">
+                    <strong>الجانب التعليمي:</strong> يجب أن تشكل الركبتان زاوية 90 درجة عند النزول. <strong>الفائدة:</strong> شد ترهلات الأرجل وتحسين المرونة الحركية لمفاصل الحوض.
+                </div>
             </div>
         </section>
 
         <section id="nutrition">
             <h2>3- قسم التغذية: الوقود الحيوي</h2>
-            
             <p>لفهم كيف يعمل جسمنا، يجب أن ننظر إلى الغذاء كـ <strong>وقود</strong> وليس مجرد وجبات. البروتينات والكربوهيدرات هما الركيزتان الأساسيتان لأي نشاط بدني أو ذهني.</p>
 
             <h3>🥩 البروتين (حجر البناء)</h3>
@@ -149,30 +171,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>صدر دجاج (مشوي)</td>
-                        <td>165</td>
-                        <td>31</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>أرز أبيض (مطبوخ)</td>
-                        <td>130</td>
-                        <td>2.7</td>
-                        <td>28</td>
-                    </tr>
-                    <tr>
-                        <td>بيض مسلوق (حبة)</td>
-                        <td>155</td>
-                        <td>13</td>
-                        <td>1.1</td>
-                    </tr>
-                    <tr>
-                        <td>شوفان (خام)</td>
-                        <td>389</td>
-                        <td>16.9</td>
-                        <td>66</td>
-                    </tr>
+                    <tr><td>صدر دجاج (مشوي)</td><td>165</td><td>31</td><td>0</td></tr>
+                    <tr><td>أرز أبيض (مطبوخ)</td><td>130</td><td>2.7</td><td>28</td></tr>
+                    <tr><td>بيض مسلوق (حبة)</td><td>155</td><td>13</td><td>1.1</td></tr>
+                    <tr><td>شوفان (خام)</td><td>389</td><td>16.9</td><td>66</td></tr>
                 </tbody>
             </table>
 
@@ -188,16 +190,10 @@
             <div class="motivation-content">
                 <h3>🏋️‍♂️ الجيم: حيث تُصنع النسخة الأفضل منك</h3>
                 <p>الجيم ليس مجرد جدران تضم معدات حديدية، بل هو المصنع الذي تُعاد فيه صياغة شخصيتك قبل جسدك. عندما تقرر الذهاب للتمرين، أنت لا ترفع الأثقال فحسب، بل ترفع سقف طموحاتك وتكسر قيود الكسل.</p>
-                
-                <img src="https://modo3.com/thumbs/fit630x300/9454/1437036555/%D9%85%D8%B9%D9%84%D9%80%D9%88%D9%85%D8%A7%D8%AA_%D8%B9%D9%86_%D9%83%D9%85%D8%A7%D9%84_%D8%A7%D9%84%D8%A7%D8%AC%D8%B3%D8%A7%D9%85.jpg" alt="تحفيز الجيم" class="motivation-image">
-
+                <img src="https://modo3.com/thumbs/fit630x300/9454/1437036555/%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA_%D8%B9%D9%86_%D9%83%D9%85%D8%A7%D9%84_%D8%A7%D9%84%D8%A7%D8%AC%D8%B3%D8%A7%D9%85.jpg" alt="تحفيز الجيم" class="motivation-image">
                 <h3>✨ المعركة الحقيقية</h3>
                 <p>تذكر دائماً أن أصعب ساعة في النادي هي تلك التي تسبق وصولك إليه؛ فالمعركة الحقيقية هي معركة الإرادة ضد أعذار العقل الباطن.</p>
-
-                <div class="highlight-box">
-                    "التعب الذي تشعر به اليوم، سيكون القوة التي تشعر بها غداً."
-                </div>
-
+                <div class="highlight-box">"التعب الذي تشعر به اليوم، سيكون القوة التي تشعر بها غداً."</div>
                 <p><strong>الحديد لا يعرف المجاملة.. وهو ينتظرك لتكتب قصة نجاحك الجديدة.</strong></p>
             </div>
         </section>
@@ -205,22 +201,10 @@
         <section id="students">
             <h2>5- أعضاء فريق المشروع (المجموعة 2)</h2>
             <div class="student-grid">
-                <div class="student-card">
-                    <span>👤</span>
-                    <p>ياسر علي السبعي</p>
-                </div>
-                <div class="student-card">
-                    <span>👤</span>
-                    <p>البراء إبراهيم نعمان</p>
-                </div>
-                <div class="student-card">
-                    <span>👤</span>
-                    <p>إياس عبدالله عطيف</p>
-                </div>
-                <div class="student-card">
-                    <span>👤</span>
-                    <p>عمر عبدالله آل راقع</p>
-                </div>
+                <div class="student-card"><span>👤</span><p>ياسر علي السبعي</p></div>
+                <div class="student-card"><span>👤</span><p>البراء إبراهيم نعمان</p></div>
+                <div class="student-card"><span>👤</span><p>إياس عبدالله عطيف</p></div>
+                <div class="student-card"><span>👤</span><p>عمر عبدالله آل راقع</p></div>
             </div>
         </section>
 
