@@ -26,6 +26,13 @@
         section { background: #1e1e1e; margin-bottom: 50px; padding: 40px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); border-top: 4px solid #e63946; }
         h2 { color: #e63946; border-bottom: 1px solid #333; padding-bottom: 15px; margin-top: 0; display: flex; align-items: center; gap: 10px; }
         
+        /* تنسيق قسم التدريب المطور */
+        .exercise-card { background: #252525; border-radius: 12px; padding: 20px; margin-bottom: 30px; border: 1px solid #333; }
+        .exercise-card h3 { color: #e63946; margin-top: 0; }
+        .exercise-gif { width: 100%; max-width: 500px; border-radius: 8px; display: block; margin: 15px auto; border: 2px solid #e63946; }
+        .exercise-info { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 5px; }
+        .exercise-info span { font-weight: bold; color: #e63946; }
+
         /* تنسيق الجداول */
         .nutrition-table { width: 100%; border-collapse: collapse; margin: 25px 0; background: #252525; color: #fff; border-radius: 8px; overflow: hidden; }
         .nutrition-table th, .nutrition-table td { padding: 15px; text-align: center; border-bottom: 1px solid #333; }
@@ -48,8 +55,6 @@
         .student-card:hover { border-color: #e63946; transform: translateY(-5px); }
         .student-card i { display: block; font-size: 2em; margin-bottom: 10px; color: #e63946; }
         .student-card p { margin: 0; font-weight: bold; font-size: 1.1em; }
-
-        .placeholder-text { color: #666; font-style: italic; text-align: center; padding: 20px; border: 1px dashed #444; border-radius: 5px; }
 
         footer { text-align: center; padding: 50px; color: #888; font-size: 0.9em; border-top: 1px solid #333; background: #0a0a0a; }
     </style>
@@ -80,26 +85,66 @@
             <p>رؤيتنا هي تبسيط الوصول للمعلومات الرياضية والصحية والمساهمة في بناء مجتمع أكثر حيوية وقوة.</p>
         </section>
 
-        <section>
-            <h2>لماذا تختار Elite Gym؟</h2>
-            <p>"الألم مؤقت، لكن المجد أبدي. نحن نوفر لك البيئة المثالية لتفجير طاقاتك والوصول إلى أفضل نسخة من نفسك."</p>
-        </section>
-
         <section id="training">
-            <h2>2- قسم التدريب</h2>
-            <p class="placeholder-text">[المحتوى سيتم إضافته لاحقا ]</p> 
+            <h2>2- قسم التدريب: الركائز الأساسية</h2>
+            <p>تعتبر تمارين <strong>الصدر، الظهر، والأرجل</strong> هي القاعدة الهيكلية لأي رياضي؛ فتدريب هذه المجموعات العضلية الكبرى يعزز القوة البدنية ويرفع معدلات الأيض.</p>
+            
+            <div class="highlight-box">
+                استهدف هذه العضلات لبناء جسم متناسق وقوي، فهي "محرك" الجسم الحقيقي.
+            </div>
+
+            <!-- التمرين 1 -->
+            <div class="exercise-card">
+                <h3>1. ضغط الصدر (Dumbbell Chest Press)</h3>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpqcXN6cmx6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKMf5B7S4Yy9wME/giphy.gif" alt="Dumbbell Chest Press" class="exercise-gif">
+                <div class="exercise-info">
+                    <p><span>العضلة:</span> الصدر | <span>ملاحظة:</span> ادفع الوزن للأعلى ببطء وحافظ على استقامة الظهر على المقعد.</p>
+                </div>
+            </div>
+
+            <!-- التمرين 2 -->
+            <div class="exercise-card">
+                <h3>2. السحب العالي (Lat Pulldown)</h3>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZueG96bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKMGm8O5hW4F6Te/giphy.gif" alt="Lat Pulldown" class="exercise-gif">
+                <div class="exercise-info">
+                    <p><span>العضلة:</span> الظهر (العرض) | <span>ملاحظة:</span> اسحب البار نحو صدرك العلوي مع عصر عضلات الظهر.</p>
+                </div>
+            </div>
+
+            <!-- التمرين 3 -->
+            <div class="exercise-card">
+                <h3>3. السكوات / القرفصاء (Bodyweight Squat)</h3>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmZueG96bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/26FPsOhRIu6N8iS0o/giphy.gif" alt="Squat" class="exercise-gif">
+                <div class="exercise-info">
+                    <p><span>العضلة:</span> الأرجل كاملة | <span>ملاحظة:</span> حافظ على استقامة صدرك ولا تجعل ركبتيك تتجاوز أصابع قدميك.</p>
+                </div>
+            </div>
+
+            <!-- التمرين 4 -->
+            <div class="exercise-card">
+                <h3>4. التجديف بالدمبل (One Arm Row)</h3>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZueG96bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/l0HlS5l4T2Yy5m5mU/giphy.gif" alt="Dumbbell Row" class="exercise-gif">
+                <div class="exercise-info">
+                    <p><span>العضلة:</span> الظهر (الوسط) | <span>ملاحظة:</span> اسحب الدمبل نحو خصرك مع إبقاء الكوع قريباً من جسمك.</p>
+                </div>
+            </div>
+
+            <!-- التمرين 5 -->
+            <div class="exercise-card">
+                <h3>5. الطعنات (Lunges)</h3>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZueG96bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6bmV6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKM6fXW3PZfO7kc/giphy.gif" alt="Lunges" class="exercise-gif">
+                <div class="exercise-info">
+                    <p><span>العضلة:</span> الأرجل والمؤخرة | <span>ملاحظة:</span> انزل لأسفل حتى تشكل كلتا ركبتيك زاوية 90 درجة.</p>
+                </div>
+            </div>
         </section>
 
         <section id="nutrition">
             <h2>3- قسم التغذية: الوقود الحيوي</h2>
-            
             <p>لفهم كيف يعمل جسمنا، يجب أن ننظر إلى الغذاء كـ <strong>وقود</strong> وليس مجرد وجبات. البروتينات والكربوهيدرات هما الركيزتان الأساسيتان لأي نشاط بدني أو ذهني.</p>
 
             <h3>🥩 البروتين (حجر البناء)</h3>
-            <p>البروتين ليس فقط لبناء العضلات، بل هو المسؤول عن ترميم الأنسجة، دعم المناعة، وصناعة الإنزيمات والهرمونات. يتكون من أحماض أمينية تعمل كـ "لبنات" أساسية تضمن استمرارية كفاءة الجسم الحيوية.</p>
-
-            <h3>🍚 الكربوهيدرات (المصدر الأول للطاقة)</h3>
-            <p>الكربوهيدرات هي "البنزين" الحقيقي للدماغ والعضلات. يتم تحويلها إلى جلوكوز لمدك بالطاقة الفورية، أو تخزينها كجليكوجين لاستخدامها أثناء المجهود البدني الشاق.</p>
+            <p>البروتين ليس فقط لبناء العضلات، بل هو المسؤول عن ترميم الأنسجة، دعم المناعة، وصناعة الإنزيمات والهرمونات.</p>
 
             <h3>📊 جدول السعرات الحرارية (لكل 100 جرام)</h3>
             <table class="nutrition-table">
@@ -112,34 +157,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>صدر دجاج (مشوي)</td>
-                        <td>165</td>
-                        <td>31</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>أرز أبيض (مطبوخ)</td>
-                        <td>130</td>
-                        <td>2.7</td>
-                        <td>28</td>
-                    </tr>
-                    <tr>
-                        <td>بيض مسلوق (حبة)</td>
-                        <td>155</td>
-                        <td>13</td>
-                        <td>1.1</td>
-                    </tr>
-                    <tr>
-                        <td>شوفان (خام)</td>
-                        <td>389</td>
-                        <td>16.9</td>
-                        <td>66</td>
-                    </tr>
+                    <tr><td>صدر دجاج (مشوي)</td><td>165</td><td>31</td><td>0</td></tr>
+                    <tr><td>أرز أبيض (مطبوخ)</td><td>130</td><td>2.7</td><td>28</td></tr>
+                    <tr><td>بيض مسلوق (حبة)</td><td>155</td><td>13</td><td>1.1</td></tr>
+                    <tr><td>شوفان (خام)</td><td>389</td><td>16.9</td><td>66</td></tr>
                 </tbody>
             </table>
 
-            <h3>🔗 أدوات ذكية تهمك:</h3>
             <div class="link-buttons">
                 <a href="https://www.moh.gov.sa/HealthAwareness/MedicalTools/Pages/CalorieCalculate.aspx" target="_blank" class="btn-link">حاسبة السعرات الحرارية</a>
                 <a href="https://www.calculator.net/macro-calculator.html" target="_blank" class="btn-link">حاسبة الماكروز (Macros)</a>
@@ -150,40 +174,20 @@
             <h2>4- قسم التحفيز</h2>
             <div class="motivation-content">
                 <h3>🏋️‍♂️ الجيم: حيث تُصنع النسخة الأفضل منك</h3>
-                <p>الجيم ليس مجرد جدران تضم معدات حديدية، بل هو المصنع الذي تُعاد فيه صياغة شخصيتك قبل جسدك. عندما تقرر الذهاب للتمرين، أنت لا ترفع الأثقال فحسب، بل ترفع سقف طموحاتك وتكسر قيود الكسل.</p>
-                
                 <img src="https://modo3.com/thumbs/fit630x300/9454/1437036555/%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA_%D8%B9%D9%86_%D9%83%D9%85%D8%A7%D9%84_%D8%A7%D9%84%D8%A7%D8%AC%D8%B3%D8%A7%D9%85.jpg" alt="تحفيز الجيم" class="motivation-image">
-
-                <h3>✨ المعركة الحقيقية</h3>
-                <p>تذكر دائماً أن أصعب ساعة في النادي هي تلك التي تسبق وصولك إليه؛ فالمعركة الحقيقية هي معركة الإرادة ضد أعذار العقل الباطن.</p>
-
                 <div class="highlight-box">
                     "التعب الذي تشعر به اليوم، سيكون القوة التي تشعر بها غداً."
                 </div>
-
-                <p><strong>الحديد لا يعرف المجاملة.. وهو ينتظرك لتكتب قصة نجاحك الجديدة.</strong></p>
             </div>
         </section>
 
         <section id="students">
             <h2>5- أعضاء فريق المشروع (المجموعة 2)</h2>
             <div class="student-grid">
-                <div class="student-card">
-                    <span>👤</span>
-                    <p>ياسر علي السبعي</p>
-                </div>
-                <div class="student-card">
-                    <span>👤</span>
-                    <p>البراء إبراهيم نعمان</p>
-                </div>
-                <div class="student-card">
-                    <span>👤</span>
-                    <p>إياس عبدالله عطيف</p>
-                </div>
-                <div class="student-card">
-                    <span>👤</span>
-                    <p>عمر عبدالله آل راقع</p>
-                </div>
+                <div class="student-card"><span>👤</span><p>ياسر علي السبعي</p></div>
+                <div class="student-card"><span>👤</span><p>البراء إبراهيم نعمان</p></div>
+                <div class="student-card"><span>👤</span><p>إياس عبدالله عطيف</p></div>
+                <div class="student-card"><span>👤</span><p>عمر عبدالله آل راقع</p></div>
             </div>
         </section>
 
