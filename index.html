@@ -42,20 +42,17 @@
         .motivation-image { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin: 20px 0; border: 2px solid #333; }
         .highlight-box { background: rgba(230, 57, 70, 0.1); border-right: 5px solid #e63946; padding: 15px; margin: 20px 0; font-style: italic; }
 
+        /* تنسيق قسم التدريب */
+        .exercise-img { width: 100%; border-radius: 8px; margin: 15px 0; border: 1px solid #444; }
+        .sub-header { color: #e63946; margin-top: 30px; border-right: 3px solid #e63946; padding-right: 10px; }
+        .tip-card { background: #252525; padding: 15px; border-radius: 8px; border-left: 4px solid #e63946; margin-top: 15px; }
+
         /* تنسيق قسم الطلاب */
         .student-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
         .student-card { background: #252525; padding: 20px; border-radius: 8px; border: 1px solid #333; text-align: center; transition: 0.3s; }
         .student-card:hover { border-color: #e63946; transform: translateY(-5px); }
         .student-card i { display: block; font-size: 2em; margin-bottom: 10px; color: #e63946; }
         .student-card p { margin: 0; font-weight: bold; font-size: 1.1em; }
-
-        /* تنسيق خاص بقسم التدريب المحدث */
-        .exercise-item { background: #252525; padding: 25px; border-radius: 12px; margin-bottom: 30px; border-right: 5px solid #e63946; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-        .exercise-item h4 { color: #e63946; margin-top: 0; font-size: 1.4em; display: flex; align-items: center; gap: 10px; }
-        .exercise-image { width: 100%; max-width: 500px; border-radius: 10px; margin: 20px 0; border: 2px solid #333; transition: 0.3s; }
-        .exercise-image:hover { border-color: #e63946; }
-        .edu-info { background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 8px; border-left: 3px solid #e63946; margin-top: 15px; font-size: 0.95em; }
-        .edu-info strong { color: #e63946; }
 
         footer { text-align: center; padding: 50px; color: #888; font-size: 0.9em; border-top: 1px solid #333; background: #0a0a0a; }
     </style>
@@ -64,7 +61,7 @@
 
     <header>
         <h1>Welcome to Our Cloud Project - Elite Gym 🏋️‍♂️</h1>
-        <p>مشروع المجموعة 3 | القوة تبدأ من هنا</p>
+        <p>مشروع المجموعة 2 | القوة تبدأ من هنا</p>
     </header>
 
     <div class="container">
@@ -92,66 +89,57 @@
         </section>
 
         <section id="training">
-            <h2>2- قسم التدريب: هندسة الأجسام القوية</h2>
-            <p>السر في بناء جسم رياضي يكمن في استهداف <strong>المجموعات العضلية الكبرى</strong>. تدريب الصدر، الظهر، والأرجل لا يحسن مظهرك فحسب، بل يرفع من مستوى استهلاك الأكسجين (VO2 Max) ويعزز كثافة العظام والتمثيل الغذائي.</p>
+            <h2>2- قسم التدريب: أسرار بناء الجسم الرياضي</h2>
+            <p>السر يكمن في استهداف المجموعات العضلية الكبرى. تدريب الصدر، الظهر، والأرجل لا يحسن مظهرك فحسب، بل يرفع من مستوى استهلاك الأكسجين ويعزز كثافة العظام والتمثيل الغذائي.</p>
             
             <div class="highlight-box">
                 الثقافة الرياضية: العضلة تنمو بالاستشفاء والتغذية، والتمرين هو "الشرارة" التي تبدأ العملية.
             </div>
 
-            <!-- التمرين 1 -->
-            <div class="exercise-item">
-                <h4>1. ضغط الصدر بالدمبل (Dumbbell Chest Press)</h4>
-                <p>يعتبر حجر الأساس لتطوير الألياف العضلية للصدر (Pectoralis Major). استخدام الدمبل يمنح مدى حركي أوسع مقارنة بالبار، مما يشرك أليافاً عضلية أكثر.</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAlEahba2DRfyv7EnSs91HTSHlhA7VZrbHQ&s" alt="Dumbbell Bench Press" class="exercise-image">
-                <div class="edu-info">
-                    <strong>الجانب التعليمي:</strong> ركز على عصر عضلات الصدر في أعلى نقطة. <strong>الفائدة:</strong> تقوية عضلات الدفع وتحسين استقامة الكتف ومنع تقوس الجزء العلوي من الظهر.
-                </div>
-            </div>
+            <h3 class="sub-header">1. تمارين عضلات الصدر (Chest)</h3>
+            <p>تمثل عضلات الصدر القوة الدافعة للجزء العلوي من الجسم، وتمنحك مظهر العرض والقوة.</p>
+            
+            <p><strong>بنش برس بالبار (Barbell Bench Press):</strong> التمرين الملك للصدر، يبني الكتلة والقوة.</p>
+            <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-157m-barbell-bench-press-m1.jpg" alt="Bench Press" class="exercise-img">
 
-            <!-- التمرين 2 -->
-            <div class="exercise-item">
-                <h4>2. السحب العالي للظهر (Lat Pulldown)</h4>
-                <p>يستهدف عضلة الظهر العريضة (Latissimus Dorsi). هذا التمرين ضروري جداً لمواجهة آثار الجلوس الطويل أمام الشاشات التي تسبب ضعف عضلات السحب.</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37KbXM4aVX_iZW7P25cPaYggsgS-SXUKrFw&s" alt="Lat Pulldown" class="exercise-image">
-                <div class="edu-info">
-                    <strong>الجانب التعليمي:</strong> تخيل أنك تسحب البار بكوعك وليس بيدك. <strong>الفائدة:</strong> يمنح الجسم شكل (V) المتناسق ويخفف الضغط عن فقرات الرقبة والظهر.
-                </div>
-            </div>
+            <p><strong>تفتيح بالدمبل (Dumbbell Flyes):</strong> ممتاز لزيادة مرونة عضلات الصدر وعزلها.</p>
+            <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-24m-dumbbell-fly-m1.jpg" alt="Dumbbell Flyes" class="exercise-img">
 
-            <!-- التمرين 3 -->
-            <div class="exercise-item">
-                <h4>3. السكوات / القرفصاء (Barbell/Bodyweight Squat)</h4>
-                <p>يوصف بأنه "ملك التمارين". يحرك أكثر من 200 عضلة في الجسم. هو المحفز الأول لإنتاج هرمون النمو الطبيعي في الجسم بسبب حجم الكتلة العضلية المشاركة.</p>
-                <img src="https://blog.goldenforma.com/wp-content/uploads/2024/02/%D8%AA%D9%85%D8%B1%D9%8A%D9%86-%D8%A7%D9%84%D9%87%D8%A7%D9%83-%D8%B3%D9%83%D9%88%D8%A7%D8%AA-Hack-squat.webp" alt="Squat Training" class="exercise-image">
-                <div class="edu-info">
-                    <strong>الجانب التعليمي:</strong> حافظ على استقامة العمود الفقري وتوزيع الوزن على منتصف القدم. <strong>الفائدة:</strong> تقوية مفاصل الركبة والحوض وزيادة قوة التحمل البدني العام.
-                </div>
-            </div>
+            <h3 class="sub-header">2. تمارين عضلات الظهر (Back)</h3>
+            <p>الظهر هو "المحرك الخفي"، وتقويته تعالج انحناء الكتفين وتحمي العمود الفقري.</p>
 
-            <!-- التمرين 4 -->
-            <div class="exercise-item">
-                <h4>4. التجديف بالدمبل (Dumbbell One-Arm Row)</h4>
-                <p>تمرين عزل وتجميع لعضلات الظهر الوسطى والكتف الخلفي. يساعد في حل مشاكل "عدم التوازن العضلي" بين جهتي الجسم اليمنى واليسرى.</p>
-                <img src="https://apilyfta.com/static/GymvisualPNG/47301301-Dumbbell-Bent-over-Single-Arm-Row-(VERSION-2)_Back_720_small.png" alt="Dumbbell Row" class="exercise-image">
-                <div class="edu-info">
-                    <strong>الجانب التعليمي:</strong> حافظ على جذعك ثابتاً وموازياً للأرض وتجنب لف الخصر. <strong>الفائدة:</strong> تحسين قوة القبضة وزيادة كثافة عضلات الظهر العميقة.
-                </div>
-            </div>
+            <p><strong>سحب عالي للظهر (Lat Pulldown):</strong> البديل الأنسب للعقلة، يركز على عرض الظهر ورسم شكل V.</p>
+            <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-13m-wide-grip-lat-pulldown-m1.jpg" alt="Lat Pulldown" class="exercise-img">
 
-            <!-- التمرين 5 -->
-            <div class="exercise-item">
-                <h4>5. الطعنات المتناوبة (Forward Lunges)</h4>
-                <p>تمرين وظيفي (Functional) يحاكي حركة المشي والجري بقوة مضاعفة. يستهدف العضلات الرباعية والسمانة وعضلات التوازن الديناميكي.</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREH7IEbpKJZANkcfWPz87gGuk_gxuxT_-otA&s" alt="Lunges Exercise" class="exercise-image">
-                <div class="edu-info">
-                    <strong>الجانب التعليمي:</strong> يجب أن تشكل الركبتان زاوية 90 درجة عند النزول. <strong>الفائدة:</strong> شد ترهلات الأرجل وتحسين المرونة الحركية لمفاصل الحوض.
-                </div>
+            <p><strong>تجديف بالدمبل (Dumbbell Row):</strong> يقوي عضلات الظهر الوسطى ويساعد في استقامة القوام.</p>
+            <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-13m-dumbbell-row-m1.jpg" alt="Dumbbell Row" class="exercise-img">
+
+            <h3 class="sub-header">3. تمارين الأرجل (Legs)</h3>
+            <p>الأرجل هي قاعدة الهرم وأكبر محفز للهرمونات البنائية في الجسم.</p>
+
+            <p><strong>السكوات (Squats):</strong> التمرين الأهم للجسم كامل؛ يقوي الفخذين والأرداف وأسفل الظهر.</p>
+            <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-1m-barbell-back-squat-m1.jpg" alt="Squats" class="exercise-img">
+
+            <p><strong>الطعن بالدمبل (Dumbbell Lunges):</strong> ممتاز لتحسين التوازن وتقوية الأرجل بشكل متساوي.</p>
+            <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-27m-dumbbell-lunge-m1.jpg" alt="Lunges" class="exercise-img">
+
+            <hr style="border: 0; border-top: 1px solid #333; margin: 40px 0;">
+
+            <h3>💡 نصائح ذهبية للانطلاق:</h3>
+            <div class="tip-card">
+                <strong>الإحماء أولاً:</strong> لا تبدأ بالأوزان قبل 5-10 دقائق من تحريك المفاصل ورفع حرارة الجسم.
+            </div>
+            <div class="tip-card">
+                <strong>التدرج:</strong> ابدأ بوزن يسمح لك بأداء 12-15 تكراراً بأداء مثالي قبل التفكير في زيادته.
+            </div>
+            <div class="tip-card">
+                <strong>الاستشفاء:</strong> عضلاتك تنمو أثناء الراحة وليس أثناء التمرين، تأكد من النوم جيداً وتناول البروتين الكافي.
             </div>
         </section>
 
         <section id="nutrition">
             <h2>3- قسم التغذية: الوقود الحيوي</h2>
+            
             <p>لفهم كيف يعمل جسمنا، يجب أن ننظر إلى الغذاء كـ <strong>وقود</strong> وليس مجرد وجبات. البروتينات والكربوهيدرات هما الركيزتان الأساسيتان لأي نشاط بدني أو ذهني.</p>
 
             <h3>🥩 البروتين (حجر البناء)</h3>
@@ -171,10 +159,30 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>صدر دجاج (مشوي)</td><td>165</td><td>31</td><td>0</td></tr>
-                    <tr><td>أرز أبيض (مطبوخ)</td><td>130</td><td>2.7</td><td>28</td></tr>
-                    <tr><td>بيض مسلوق (حبة)</td><td>155</td><td>13</td><td>1.1</td></tr>
-                    <tr><td>شوفان (خام)</td><td>389</td><td>16.9</td><td>66</td></tr>
+                    <tr>
+                        <td>صدر دجاج (مشوي)</td>
+                        <td>165</td>
+                        <td>31</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>أرز أبيض (مطبوخ)</td>
+                        <td>130</td>
+                        <td>2.7</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>بيض مسلوق (حبة)</td>
+                        <td>155</td>
+                        <td>13</td>
+                        <td>1.1</td>
+                    </tr>
+                    <tr>
+                        <td>شوفان (خام)</td>
+                        <td>389</td>
+                        <td>16.9</td>
+                        <td>66</td>
+                    </tr>
                 </tbody>
             </table>
 
@@ -190,10 +198,16 @@
             <div class="motivation-content">
                 <h3>🏋️‍♂️ الجيم: حيث تُصنع النسخة الأفضل منك</h3>
                 <p>الجيم ليس مجرد جدران تضم معدات حديدية، بل هو المصنع الذي تُعاد فيه صياغة شخصيتك قبل جسدك. عندما تقرر الذهاب للتمرين، أنت لا ترفع الأثقال فحسب، بل ترفع سقف طموحاتك وتكسر قيود الكسل.</p>
+                
                 <img src="https://modo3.com/thumbs/fit630x300/9454/1437036555/%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA_%D8%B9%D9%86_%D9%83%D9%85%D8%A7%D9%84_%D8%A7%D9%84%D8%A7%D8%AC%D8%B3%D8%A7%D9%85.jpg" alt="تحفيز الجيم" class="motivation-image">
+
                 <h3>✨ المعركة الحقيقية</h3>
                 <p>تذكر دائماً أن أصعب ساعة في النادي هي تلك التي تسبق وصولك إليه؛ فالمعركة الحقيقية هي معركة الإرادة ضد أعذار العقل الباطن.</p>
-                <div class="highlight-box">"التعب الذي تشعر به اليوم، سيكون القوة التي تشعر بها غداً."</div>
+
+                <div class="highlight-box">
+                    "التعب الذي تشعر به اليوم، سيكون القوة التي تشعر بها غداً."
+                </div>
+
                 <p><strong>الحديد لا يعرف المجاملة.. وهو ينتظرك لتكتب قصة نجاحك الجديدة.</strong></p>
             </div>
         </section>
@@ -201,10 +215,22 @@
         <section id="students">
             <h2>5- أعضاء فريق المشروع (المجموعة 2)</h2>
             <div class="student-grid">
-                <div class="student-card"><span>👤</span><p>ياسر علي السبعي</p></div>
-                <div class="student-card"><span>👤</span><p>البراء إبراهيم نعمان</p></div>
-                <div class="student-card"><span>👤</span><p>إياس عبدالله عطيف</p></div>
-                <div class="student-card"><span>👤</span><p>عمر عبدالله آل راقع</p></div>
+                <div class="student-card">
+                    <span>👤</span>
+                    <p>ياسر علي السبعي</p>
+                </div>
+                <div class="student-card">
+                    <span>👤</span>
+                    <p>البراء إبراهيم نعمان</p>
+                </div>
+                <div class="student-card">
+                    <span>👤</span>
+                    <p>إياس عبدالله عطيف</p>
+                </div>
+                <div class="student-card">
+                    <span>👤</span>
+                    <p>عمر عبدالله آل راقع</p>
+                </div>
             </div>
         </section>
 
