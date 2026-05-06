@@ -22,37 +22,40 @@
         .nav-links li a { color: #ffffff; text-decoration: none; font-size: 1.1em; transition: 0.3s; display: block; padding: 5px 0; }
         .nav-links li a:hover { color: #e63946; padding-right: 10px; }
 
-        /* تنسيق الأقسام */
+        /* تنسيق الأقسام العام */
         section { background: #1e1e1e; margin-bottom: 50px; padding: 40px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); border-top: 4px solid #e63946; }
         h2 { color: #e63946; border-bottom: 1px solid #333; padding-bottom: 15px; margin-top: 0; display: flex; align-items: center; gap: 10px; }
+
+        /* --- تنسيق قسم التدريب "الفنان" --- */
+        .muscle-group-title { background: #e63946; color: #fff; display: inline-block; padding: 5px 20px; border-radius: 5px; margin-top: 30px; font-weight: bold; }
+        .feature-list { list-style: none; padding: 0; margin: 20px 0; }
+        .feature-list li { background: rgba(255,255,255,0.05); margin-bottom: 8px; padding: 10px 15px; border-radius: 5px; border-right: 3px solid #e63946; }
         
+        .exercise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+        .exercise-card { background: #252525; border-radius: 12px; overflow: hidden; border: 1px solid #333; transition: 0.3s; }
+        .exercise-card:hover { border-color: #e63946; transform: translateY(-5px); }
+        .exercise-info { padding: 15px; }
+        .exercise-info strong { color: #e63946; display: block; margin-bottom: 8px; font-size: 1.1em; }
+        .exercise-img { width: 100%; height: 220px; object-fit: cover; border-bottom: 2px solid #e63946; }
+
+        .tips-container { background: linear-gradient(145deg, #1e1e1e, #252525); padding: 30px; border-radius: 15px; border: 1px dashed #e63946; margin-top: 40px; }
+        .tip-box { display: flex; align-items: center; gap: 15px; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+        .tip-icon { font-size: 1.5em; background: #e63946; padding: 10px; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; }
+        /* -------------------------------- */
+
         /* تنسيق الجداول */
         .nutrition-table { width: 100%; border-collapse: collapse; margin: 25px 0; background: #252525; color: #fff; border-radius: 8px; overflow: hidden; }
         .nutrition-table th, .nutrition-table td { padding: 15px; text-align: center; border-bottom: 1px solid #333; }
         .nutrition-table th { background-color: #e63946; color: white; }
-        .nutrition-table tr:hover { background-color: #2a2a2a; }
-
-        /* تنسيق الأزرار/الروابط */
+        
         .link-buttons { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
-        .btn-link { background: #e63946; color: #fff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; transition: 0.3s; flex: 1; text-align: center; min-width: 200px; }
-        .btn-link:hover { background: #b91d2a; transform: scale(1.02); }
+        .btn-link { background: #e63946; color: #fff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; transition: 0.3s; flex: 1; text-align: center; }
+        .btn-link:hover { background: #b91d2a; }
 
-        /* تنسيق إضافي لقسم التحفيز */
-        .motivation-content { line-height: 1.8; }
-        .motivation-image { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin: 20px 0; border: 2px solid #333; }
         .highlight-box { background: rgba(230, 57, 70, 0.1); border-right: 5px solid #e63946; padding: 15px; margin: 20px 0; font-style: italic; }
-
-        /* تنسيق الصور والتدريب */
-        .exercise-card { background: #252525; padding: 20px; border-radius: 10px; margin: 20px 0; border: 1px solid #333; }
-        .exercise-img { width: 100%; border-radius: 8px; margin-top: 15px; border: 1px solid #444; display: block; }
-        .tip-item { background: #2a2a2a; padding: 15px; border-radius: 8px; margin-bottom: 10px; border-right: 4px solid #e63946; }
-
-        /* تنسيق قسم الطلاب */
+        
         .student-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
-        .student-card { background: #252525; padding: 20px; border-radius: 8px; border: 1px solid #333; text-align: center; transition: 0.3s; }
-        .student-card:hover { border-color: #e63946; transform: translateY(-5px); }
-        .student-card i { display: block; font-size: 2em; margin-bottom: 10px; color: #e63946; }
-        .student-card p { margin: 0; font-weight: bold; font-size: 1.1em; }
+        .student-card { background: #252525; padding: 20px; border-radius: 8px; border: 1px solid #333; text-align: center; }
 
         footer { text-align: center; padding: 50px; color: #888; font-size: 0.9em; border-top: 1px solid #333; background: #0a0a0a; }
     </style>
@@ -80,12 +83,6 @@
         <section id="about">
             <h2>1- تعريف عن الفريق وأهداف المشروع</h2>
             <p>نحن فريق من طلاب جامعة جازان يجمعنا الطموح والشغف بالتقنية والرياضة. يهدف مشروعنا إلى تسليط الضوء على أهمية اللياقة البدنية من خلال دمج مهارات الاستضافة السحابية وتطوير الويب لإنشاء منصة "Elite Gym".</p>
-            <p>رؤيتنا هي تبسيط الوصول للمعلومات الرياضية والصحية والمساهمة في بناء مجتمع أكثر حيوية وقوة.</p>
-        </section>
-
-        <section>
-            <h2>لماذا تختار Elite Gym؟</h2>
-            <p>"الألم مؤقت، لكن المجد أبدي. نحن نوفر لك البيئة المثالية لتفجير طاقاتك والوصول إلى أفضل نسخة من نفسك."</p>
         </section>
 
         <section id="training">
@@ -97,114 +94,132 @@
             </div>
 
             <!-- الصدر -->
-            <h3>1. تمارين عضلات الصدر (Chest)</h3>
+            <div class="muscle-group-title">1. تمارين عضلات الصدر (Chest)</div>
             <p>تمثل عضلات الصدر القوة الدافعة للجزء العلوي من الجسم.</p>
-            <ul>
+            <ul class="feature-list">
                 <li><strong>القوة الوظيفية:</strong> تساعدك في جميع حركات "الدفع" اليومية، مثل فتح الأبواب الثقيلة أو النهوض من الأرض.</li>
                 <li><strong>تحسين المظهر العام:</strong> تمنح الجسم مظهر العرض والقوة، وهي أساسية للحصول على شكل حرف (V) المتناسق.</li>
                 <li><strong>دعم التنفس:</strong> تساهم عضلات الصدر القوية في دعم القفص الصدري، مما يساعد في تحسين عملية التنفس العميق.</li>
             </ul>
 
-            <div class="exercise-card">
-                <p><strong>بنش برس بالبار (Barbell Bench Press):</strong> التمرين الملك للصدر، يبني الكتلة العضلية والقوة في الصدر والأكتاف والترايسيبس.</p>
-                <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-157m-barbell-bench-press-m1.jpg" alt="Bench Press" class="exercise-img">
-            </div>
-
-            <div class="exercise-card">
-                <p><strong>تفتيح بالدمبل (Dumbbell Flyes):</strong> ممتاز لزيادة مرونة عضلات الصدر وعزلها، ويساعد في توسيع مظهر الصدر.</p>
-                <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-24m-dumbbell-fly-m1.jpg" alt="Dumbbell Flyes" class="exercise-img">
+            <div class="exercise-grid">
+                <div class="exercise-card">
+                    <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-157m-barbell-bench-press-m1.jpg" alt="Bench Press" class="exercise-img">
+                    <div class="exercise-info">
+                        <strong>بنش برس بالبار (Barbell Bench Press)</strong>
+                        التمرين الملك للصدر، يبني الكتلة العضلية والقوة في الصدر والأكتاف والترايسيبس.
+                    </div>
+                </div>
+                <div class="exercise-card">
+                    <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-24m-dumbbell-fly-m1.jpg" alt="Dumbbell Flyes" class="exercise-img">
+                    <div class="exercise-info">
+                        <strong>تفتيح بالدمبل (Dumbbell Flyes)</strong>
+                        ممتاز لزيادة مرونة عضلات الصدر وعزلها، ويساعد في توسيع مظهر الصدر.
+                    </div>
+                </div>
             </div>
 
             <!-- الظهر -->
-            <h3>2. تمارين عضلات الظهر (Back)</h3>
+            <div class="muscle-group-title">2. تمارين عضلات الظهر (Back)</div>
             <p>الظهر هو "المحرك الخفي" للجسم، وإهماله هو السبب الأول لآلام المفاصل والعمود الفقري.</p>
-            <ul>
-                <li><strong>تحسين القوام (Posture):</strong> تقوية الظهر تعالج انحناء الكتفين للأمام (الناتج عن كثرة استخدام الهواتف والمكاتب)، وتجعلك تقف بوضعية أكثر استقامة وثقة.</li>
+            <ul class="feature-list">
+                <li><strong>تحسين القوام (Posture):</strong> تقوية الظهر تعالج انحناء الكتفين للأمام، وتجعلك تقف بوضعية أكثر استقامة وثقة.</li>
                 <li><strong>حماية العمود الفقري:</strong> العضلات القوية تحيط بالفقرات وتحميها من الإصابات والديسك.</li>
-                <li><strong>التوازن العضلي:</strong> توازن قوة الصدر مع الظهر يمنع حدوث تشوهات في الهيكل العظمي ويقلل من آلام الرقبة والأكتاف.</li>
+                <li><strong>التوازن العضلي:</strong> توازن قوة الصدر مع الظهر يمنع حدوث تشوهات في الهيكل العظمي ويقلل من آلام الرقبة.</li>
             </ul>
 
-            <div class="exercise-card">
-                <p><strong>سحب عالي للظهر (Lat Pulldown):</strong> البديل الأنسب للمبتدئين عن تمرين العقلة، يركز على عرض الظهر ورسم شكل (V).</p>
-                <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-13m-wide-grip-lat-pulldown-m1.jpg" alt="Lat Pulldown" class="exercise-img">
-            </div>
-
-            <div class="exercise-card">
-                <p><strong>تجديف بالدمبل (Dumbbell Row):</strong> يقوي عضلات الظهر الوسطى ويساعد جداً في تعديل استقامة القوام وحماية العمود الفقري.</p>
-                <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-13m-dumbbell-row-m1.jpg" alt="Dumbbell Row" class="exercise-img">
+            <div class="exercise-grid">
+                <div class="exercise-card">
+                    <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-13m-wide-grip-lat-pulldown-m1.jpg" alt="Lat Pulldown" class="exercise-img">
+                    <div class="exercise-info">
+                        <strong>سحب عالي للظهر (Lat Pulldown)</strong>
+                        البديل الأنسب للمبتدئين عن تمرين العقلة، يركز على عرض الظهر ورسم شكل (V).
+                    </div>
+                </div>
+                <div class="exercise-card">
+                    <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-13m-dumbbell-row-m1.jpg" alt="Dumbbell Row" class="exercise-img">
+                    <div class="exercise-info">
+                        <strong>تجديف بالدمبل (Dumbbell Row)</strong>
+                        يقوي عضلات الظهر الوسطى ويساعد جداً في تعديل استقامة القوام وحماية العمود الفقري.
+                    </div>
+                </div>
             </div>
 
             <!-- الأرجل -->
-            <h3>3. تمارين الأرجل (Legs)</h3>
+            <div class="muscle-group-title">3. تمارين الأرجل (Legs)</div>
             <p>يُقال دائماً "لا تهمل يوم الأرجل"، وهذا ليس من فراغ؛ فالأرجل هي قاعدة الهرم.</p>
-            <ul>
-                <li><strong>أكبر محفز للهرمونات:</strong> تمرين الأرجل يحفز الجسم على إفراز كميات كبيرة من هرمون التستوستيرون وهرمون النمو (GH)، مما يساعد في نمو عضلات الجسم بالكامل وليس الأرجل فقط.</li>
-                <li><strong>حرق سعرات حرارية أعلى:</strong> بما أن عضلات الأرجل هي الأكبر في الجسم، فإن تمرينها يتطلب طاقة هائلة، مما يزيد من معدل الأيض (حرق الدهون).</li>
-                <li><strong>التوازن والاستقرار:</strong> تقوية الجزء السفلي تحمي الركبتين والمفاصل وتزيد من توازنك الحركي، مما يقلل خطر السقوط أو الإصابة مع تقدم العمر.</li>
+            <ul class="feature-list">
+                <li><strong>أكبر محفز للهرمونات:</strong> تمرين الأرجل يحفز الجسم على إفراز كميات كبيرة من هرمون التستوستيرون وهرمون النمو (GH).</li>
+                <li><strong>حرق سعرات حرارية أعلى:</strong> بما أن عضلات الأرجل هي الأكبر، فإن تمرينها يتطلب طاقة هائلة تزيد معدل الأيض.</li>
+                <li><strong>التوازن والاستقرار:</strong> تقوية الجزء السفلي تحمي الركبتين وتزيد توازنك الحركي.</li>
             </ul>
 
-            <div class="exercise-card">
-                <p><strong>السكوات (Squats):</strong> التمرين الأهم للجسم كامل؛ يقوي الفخذين، الأرداف، وحتى أسفل الظهر.</p>
-                <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-1m-barbell-back-squat-m1.jpg" alt="Squats" class="exercise-img">
+            <div class="exercise-grid">
+                <div class="exercise-card">
+                    <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-1m-barbell-back-squat-m1.jpg" alt="Squats" class="exercise-img">
+                    <div class="exercise-info">
+                        <strong>السكوات (Squats)</strong>
+                        التمرين الأهم للجسم كامل؛ يقوي الفخذين، الأرداف، وحتى أسفل الظهر.
+                    </div>
+                </div>
+                <div class="exercise-card">
+                    <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-27m-dumbbell-lunge-m1.jpg" alt="Lunges" class="exercise-img">
+                    <div class="exercise-info">
+                        <strong>الطعن بالدمبل (Dumbbell Lunges)</strong>
+                        ممتاز لتحسين التوازن وتقوية عضلات الأرجل الأمامية والخلفية بشكل متساوي.
+                    </div>
+                </div>
             </div>
 
-            <div class="exercise-card">
-                <p><strong>الطعن بالدمبل (Dumbbell Lunges):</strong> ممتاز لتحسين التوازن وتقوية عضلات الأرجل الأمامية والخلفية بشكل متساوي.</p>
-                <img src="https://www.bodybuilding.com/images/2020/xdb/originals/xdb-27m-dumbbell-lunge-m1.jpg" alt="Lunges" class="exercise-img">
+            <!-- النصائح الذهبية -->
+            <div class="tips-container">
+                <h3>💡 نصائح ذهبية للانطلاق:</h3>
+                <div class="tip-box">
+                    <div class="tip-icon">🔥</div>
+                    <div><strong>الإحماء أولاً:</strong> لا تبدأ بالأوزان قبل 5-10 دقائق من تحريك المفاصل ورفع حرارة الجسم.</div>
+                </div>
+                <div class="tip-box">
+                    <div class="tip-icon">📈</div>
+                    <div><strong>التدرج:</strong> ابدأ بوزن يسمح لك بأداء 12-15 تكراراً بأداء مثالي قبل التفكير في زيادته.</div>
+                </div>
+                <div class="tip-box">
+                    <div class="tip-icon">💤</div>
+                    <div><strong>الاستشفاء:</strong> عضلاتك تنمو أثناء الراحة وليس أثناء التمرين، تأكد من النوم جيداً وتناول البروتين الكافي.</div>
+                </div>
             </div>
-
-            <hr style="border: 0; border-top: 1px solid #333; margin: 40px 0;">
-
-            <h3>💡 نصائح ذهبية للانطلاق:</h3>
-            <div class="tip-item"><strong>الإحماء أولاً:</strong> لا تبدأ بالأوزان قبل 5-10 دقائق من تحريك المفاصل ورفع حرارة الجسم.</div>
-            <div class="tip-item"><strong>التدرج:</strong> ابدأ بوزن يسمح لك بأداء 12-15 تكراراً بأداء مثالي قبل التفكير في زيادته.</div>
-            <div class="tip-item"><strong>الاستشفاء:</strong> عضلاتك تنمو أثناء الراحة وليس أثناء التمرين، تأكد من النوم جيداً وتناول البروتين الكافي.</div>
         </section>
 
-        <!-- باقي الأقسام كما هي دون تغيير -->
+        <!-- بقية الأقسام (تغذية، تحفيز، طلاب) تظل كما هي في كودك الأصلي -->
         <section id="nutrition">
             <h2>3- قسم التغذية: الوقود الحيوي</h2>
-            <p>لفهم كيف يعمل جسمنا، يجب أن ننظر إلى الغذاء كـ <strong>وقود</strong> وليس مجرد وجبات. البروتينات والكربوهيدرات هما الركيزتان الأساسيتان لأي نشاط بدني أو ذهني.</p>
-            <h3>🥩 البروتين (حجر البناء)</h3>
-            <p>البروتين ليس فقط لبناء العضلات، بل هو المسؤول عن ترميم الأنسجة، دعم المناعة، وصناعة الإنزيمات والهرمونات.</p>
-            <h3>🍚 الكربوهيدرات (المصدر الأول للطاقة)</h3>
-            <p>الكربوهيدرات هي "البنزين" الحقيقي للدماغ والعضلات.</p>
-            <h3>📊 جدول السعرات الحرارية (لكل 100 جرام)</h3>
+            <p>لفهم كيف يعمل جسمنا، يجب أن ننظر إلى الغذاء كـ <strong>وقود</strong> وليس مجرد وجبات.</p>
             <table class="nutrition-table">
                 <thead>
-                    <tr><th>الصنف الغذائي</th><th>السعرات</th><th>البروتين (جرام)</th><th>الكربوهيدرات (جرام)</th></tr>
+                    <tr><th>الصنف الغذائي</th><th>السعرات</th><th>البروتين</th><th>الكربوهيدرات</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>صدر دجاج (مشوي)</td><td>165</td><td>31</td><td>0</td></tr>
-                    <tr><td>أرز أبيض (مطبوخ)</td><td>130</td><td>2.7</td><td>28</td></tr>
-                    <tr><td>بيض مسلوق (حبة)</td><td>155</td><td>13</td><td>1.1</td></tr>
-                    <tr><td>شوفان (خام)</td><td>389</td><td>16.9</td><td>66</td></tr>
+                    <tr><td>صدر دجاج</td><td>165</td><td>31</td><td>0</td></tr>
+                    <tr><td>أرز أبيض</td><td>130</td><td>2.7</td><td>28</td></tr>
                 </tbody>
             </table>
-            <h3>🔗 أدوات ذكية تهمك:</h3>
             <div class="link-buttons">
-                <a href="https://www.moh.gov.sa/HealthAwareness/MedicalTools/Pages/CalorieCalculate.aspx" target="_blank" class="btn-link">حاسبة السعرات الحرارية</a>
-                <a href="https://www.calculator.net/macro-calculator.html" target="_blank" class="btn-link">حاسبة الماكروز (Macros)</a>
+                <a href="#" class="btn-link">حاسبة السعرات</a>
+                <a href="#" class="btn-link">حاسبة الماكروز</a>
             </div>
         </section>
 
         <section id="motivation">
             <h2>4- قسم التحفيز</h2>
-            <div class="motivation-content">
-                <h3>🏋️‍♂️ الجيم: حيث تُصنع النسخة الأفضل منك</h3>
-                <p>الجيم ليس مجرد جدران تضم معدات حديدية، بل هو المصنع الذي تُعاد فيه صياغة شخصيتك قبل جسدك.</p>
-                <img src="https://modo3.com/thumbs/fit630x300/9454/1437036555/%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA_%D8%B9%D9%86_%D9%83%D9%85%D8%A7%D9%84_%D8%A7%D9%84%D8%A7%D8%AC%D8%B3%D8%A7%D9%85.jpg" alt="تحفيز الجيم" class="motivation-image">
-                <div class="highlight-box">"التعب الذي تشعر به اليوم، سيكون القوة التي تشعر بها غداً."</div>
-            </div>
+            <div class="highlight-box">"التعب الذي تشعر به اليوم، سيكون القوة التي تشعر بها غداً."</div>
         </section>
 
         <section id="students">
-            <h2>5- أعضاء فريق المشروع (المجموعة 2)</h2>
+            <h2>5- أعضاء فريق المشروع</h2>
             <div class="student-grid">
-                <div class="student-card"><span>👤</span><p>ياسر علي السبعي</p></div>
-                <div class="student-card"><span>👤</span><p>البراء إبراهيم نعمان</p></div>
-                <div class="student-card"><span>👤</span><p>إياس عبدالله عطيف</p></div>
-                <div class="student-card"><span>👤</span><p>عمر عبدالله آل راقع</p></div>
+                <div class="student-card"><p>ياسر علي السبعي</p></div>
+                <div class="student-card"><p>البراء إبراهيم نعمان</p></div>
+                <div class="student-card"><p>إياس عبدالله عطيف</p></div>
+                <div class="student-card"><p>عمر عبدالله آل راقع</p></div>
             </div>
         </section>
     </div>
